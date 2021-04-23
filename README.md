@@ -109,11 +109,11 @@ Inference
 - `MultiHead_ResNeSXt50` - Pretrained ResNeXt50 with multi head classifier(3/2/3 classes)
   
 ## Loss list
-- `FocalLoss` - Focal loss   
-  $FL = - \alpha _t * (1 - p _t)^{\gamma} * \log(p _t)$
-- MultiClassLoss - Sum of `nn.CrossEntropyLoss` of three categories  
-  $MCE = w_{mask} * CE(o_{mask}) + w_{gender} * CE(o_{gender}) + w_{age} * CE(o_{age})$
+- `FocalLoss` - Focal loss
+<img src="https://render.githubusercontent.com/render/math?math=FL=-\alpha_{t}*(1-p_{t})^{\gamma}*\log(p_{t})">
 
+- `MultiClassLoss` - Sum of `nn.CrossEntropyLoss` of three categories
+<img src="https://render.githubusercontent.com/render/math?math=MCE=w_{mask}*CE(o_{mask})%2bw_{gender}*CE(o_{gender})%2bw_{age}*CE(o_{age})">
 
 ## Dataset list
 - `ImageDataset` - Image dataset for multi-label classification (0-17)
