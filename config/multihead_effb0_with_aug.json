@@ -1,0 +1,30 @@
+{
+    "train": {
+        "seed": 444,
+        "name": "multihead_effb0_final_aug",
+        
+        "epochs": 12,
+        "dataset": "ImageDataset",
+        "batch_size": 16,
+        "model": "MultiHead_Effb0",
+        "optimizer": "Adam",
+        "lr": 3e-05,
+        "val_ratio": 0.002,
+        "criterion": "multi",
+        "lr_decay_step": 5,
+
+        "data_dir": "/opt/ml/input/data/train/",
+        "model_dir": "/opt/ml/weight"
+    },
+
+    "inference": {
+        "batch_size": 63,
+        "model": "MultiHead_Effb0",
+        "inf_mode": "single",
+        "name": "multihead_effb0_final_aug",
+
+        "data_dir": "/opt/ml/input/data/eval/",
+        "model_dir": "/opt/ml/weight",
+        "output_dir": "/opt/ml/submission"
+    }
+}

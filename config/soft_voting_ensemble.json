@@ -1,0 +1,11 @@
+{
+    "inference": {
+        "batch_size": 63,
+        "inf_mode": "ensemble",
+        "name": "soft_voting_ensemble_v2",
+
+        "data_dir": "/opt/ml/input/data/eval/",
+        "model_dir": "/opt/ml/weight",
+        "output_dir": "/opt/ml/submission"
+    }
+}
