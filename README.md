@@ -194,3 +194,5 @@ The models(files) below were deprecated but they also showed quite good performa
 - hard_voting.ipynb - support hard voting with submission file   
   
 These source code files are not refined.
+
+**For more explanation, please refer to my [Wrap-up report](./wrapup.pdf). :)**
